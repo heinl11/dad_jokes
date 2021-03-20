@@ -1,0 +1,26 @@
+{
+  "name": "dad_jokes",
+  "version": "1.0.0",
+  "description": "A website that generates dad jokes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heinl11/dad_jokes.git"
+  },
+  "author": "Laura Maree",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heinl11/dad_jokes/issues"
+  },
+  "homepage": "https://github.com/heinl11/dad_jokes#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "node": "^15.10.0"
+  }
+}
