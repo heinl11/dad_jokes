@@ -59,3 +59,11 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* New Joke Button*/
+a {
+    position: fixed;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
