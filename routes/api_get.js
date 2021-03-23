@@ -16,6 +16,7 @@ app.get("/", (req, res, next) => {
   axios.request(options).then(function (response) {
     res.render("home",
     {css: ["flip_card.css"], 
+    js: ["flip_card.js"],
     joke: {
       setup: response.data.body[0].setup, 
       punchline: response.data.body[0].punchline}
