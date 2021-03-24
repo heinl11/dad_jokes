@@ -3,6 +3,7 @@ const axios = require("axios");
 const app = express();
 var config = require("../loaders/config.js");
 
+// Set headers with host and key. 
 const options = {
     method: 'GET',
     url: config.api_url,
@@ -12,6 +13,7 @@ const options = {
     }
   };
 
+// Get joke from API.
 app.get("/", (req, res, next) => {
   axios.request(options).then(function (response) {
     res.render("home",
