@@ -24,7 +24,15 @@ app.get("/", (req, res, next) => {
       punchline: response.data.body[0].punchline}
     });
   }).catch(function (error) {
-    console.error(error);
+    res.render("home", 
+    {css: ["flip_card.css"], 
+    js: ["flip_card.js"], 
+    joke: {
+      setup: "503 : API Unavailable",
+      punchline: "503 : API Unavailable"}
+    });
+    console.error(error.response.status);
+    console.error(error.response.statusText);
   });
 })
 
