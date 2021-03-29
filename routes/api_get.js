@@ -23,6 +23,7 @@ app.get("/", (req, res, next) => {
       setup: response.data.body[0].setup, 
       punchline: response.data.body[0].punchline}
     });
+  // When/if API temporarily unavailable
   }).catch(function (error) {
     res.render("home", 
     {css: ["flip_card.css"], 
