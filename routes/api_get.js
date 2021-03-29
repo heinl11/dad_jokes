@@ -28,8 +28,8 @@ app.get("/", (req, res, next) => {
     {css: ["flip_card.css"], 
     js: ["flip_card.js"], 
     joke: {
-      setup: "503 : API Unavailable",
-      punchline: "503 : API Unavailable"}
+      setup: "503 : API Unavailable - Try Again Later :(",
+      punchline: "503 : API Unavailable - Try Again Later :("}
     });
     console.error(error.response.status);
     console.error(error.response.statusText);
